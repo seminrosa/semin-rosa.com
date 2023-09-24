@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Drawer, IconButton, Link, Typography, useMediaQuery } from '@mui/material'
+import { Box, Drawer, IconButton, Link, LinkOwnProps, LinkProps, Typography, useMediaQuery } from '@mui/material'
 import style from './header.module.css'
 import { Dispatch, PropsWithChildren, SetStateAction, useState } from 'react'
 import { styled } from '@mui/material/styles';
@@ -19,7 +19,7 @@ type HeaderLinkProps = {
     currentRoute?: string
 }
 
-const HeaderLink = styled(Link, {
+const HeaderLink = styled((props: HeaderLinkProps & LinkProps) => <Link {...props} />, {
     shouldForwardProp: (prop) => prop !== 'currentRoute'
 })<HeaderLinkProps>(({href, currentRoute}) => ({
     textDecoration: href === currentRoute ? 'underline' : 'none',
@@ -29,7 +29,7 @@ const HeaderLink = styled(Link, {
     ":hover": {
         textDecoration: 'underline'
     }
-})) as typeof Link;
+}));
 
 export default function Header(props: PropsWithChildren) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ export default function Header(props: PropsWithChildren) {
     return (
         <header className={style.header}>
             <Typography variant='h5'>
-                <Link style={{color: 'inherit', textDecoration: 'none', fontWeight: 'bold'}} component={NextLink} currentRoute={currentRoute} href='/'>SEMIN PARK</Link>
+                <Link style={{color: 'inherit', textDecoration: 'none', fontWeight: 'bold'}} component={NextLink} href='/'>SEMIN PARK</Link>
             </Typography>
             {showMenu(isMobileMatch, currentRoute, menuOpen, setMenuOpen)}
         </header>
@@ -50,7 +50,7 @@ function showMenu(isMobileMatch: boolean, currentRoute: string, menuOpen: boolea
     return (isMobileMatch ? mobileMenu(currentRoute, menuOpen, setMenuOpen) : links(currentRoute))
 }
 
-function mobileMenu(currentRoute, menuOpen, setMenuOpen) {
+function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>) {
     console.log("mobileMenu")
     return (
         <div className={style.navContainer}>
@@ -70,7 +70,7 @@ function mobileMenu(currentRoute, menuOpen, setMenuOpen) {
     )
 }
 
-function links(currentRoute) {
+function links(currentRoute: string) {
     console.log("regularMenu")
     return (
         <div className={style.navContainer}>
