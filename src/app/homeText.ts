@@ -1,0 +1,1 @@
+export const HOME_TEXT = `Semin Park is an assistant professor in the Management and Entrepreneurship department at the Tippie College of Business, University of Iowa. Her research focuses on relational dynamics within and between teams, using a social network perspective to explore longitudinal changes in work collectives across various contexts.`

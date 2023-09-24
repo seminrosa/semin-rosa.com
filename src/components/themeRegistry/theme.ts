@@ -11,7 +11,8 @@ const theme = createTheme({
         mode: 'light'
     },
     typography: {
-        fontFamily: tinos.style.fontFamily
+        fontFamily: tinos.style.fontFamily,
+        fontSize: 16
     }
 });
 
