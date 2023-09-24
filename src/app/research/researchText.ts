@@ -6,9 +6,10 @@ export const RESEARCH = [
         description: "As a meso-level management researcher, I have thoroughly immersed myself in the extant teams literature. I view that the network approach complements teams research and can synergistically improve our understanding of the dynamic channels and processes of intra-group.",
         papers: [
             {
-                title: "The evolution of work team research since Hawthorne",
+                title: "The Evolution of Teams Research",
                 citation: "Mathieu, J. E., Wolfson, M. A., & Park, S. (2018) The evolution of work team research since Hawthorne. American Psychologist, 73(4), 308-321.",
-                link: "https://doi.org/10.1037/amp0000255"
+                link: "https://doi.org/10.1037/amp0000255",
+                description: "We chronicle the evolution of 3 schools of thought concerning work groups that spawned about the time of those studies. We highlight the different emphases of each perspective and how they eventually merged into an integrated view of teamwork. We also illustrate the disciplinary ebbs and flows of work group research over the past quarter century and how many different scholars from diverse institutions are currently contributing to the literature. We highlight the progress that has been made both in terms of scholarly insights and practical advances."
             },
             {
                 title: "Understanding work teams from a network perspective: A review and future research directions",
