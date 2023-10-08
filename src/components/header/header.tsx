@@ -12,7 +12,7 @@ const LINKS = [
     { text: 'Home', href: '/'},
     { text: 'Research', href: '/research' },
     { text: 'Teaching', href: '/teaching' },
-    { text: 'About', href: '/about' }
+    { text: 'Journey', href: '/journey' }
 ];
 
 type HeaderLinkProps = {
@@ -51,7 +51,6 @@ function showMenu(isMobileMatch: boolean, currentRoute: string, menuOpen: boolea
 }
 
 function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>) {
-    console.log("mobileMenu")
     return (
         <div className={style.navContainer}>
             <IconButton onClick={() => setMenuOpen(!menuOpen)}>
@@ -71,7 +70,6 @@ function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispat
 }
 
 function links(currentRoute: string) {
-    console.log("regularMenu")
     return (
         <div className={style.navContainer}>
             {LINKS.map((link) => (
