@@ -1,0 +1,10 @@
+.journeyContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 150px;
+    min-height: 70vh;
+    max-width: 100vw;
+    width: 100vw;
+  }
+  
