@@ -7,14 +7,14 @@ export const JOURNEY_TEXT = {
         location: 'Seoul, Korea'
     },
     ebs: {
-        date: '2009',
+        date: 'Aug 2009 - Dec 2009',
         color: '#A41034',
         title: 'European Business School',
         subtitle: 'Exchange Semester',
         location: 'Oestrich-Winkel, Germany',
     },
     lg: {
-        date: '2010',
+        date: 'July 2010 - Aug 2010',
         color: '#A41034',
         title: 'LG Display',
         subtitle: 'Summer Intern',
@@ -25,7 +25,7 @@ export const JOURNEY_TEXT = {
         date: 'Feb 2011'
     },
     snuMaEnd: {
-        date: 'Feb 2013',
+        date: 'Mar 2011 - Feb 2013',
         color: '#A41034',
         title: 'Seoul National University',
         subtitle: 'M.Sc., Organizational Behavior and Human Resource Management',
@@ -34,7 +34,8 @@ export const JOURNEY_TEXT = {
     samsung: {
         date: 'Feb 2013 - Apr 2013',
         title: 'Samsung C&T',
-        subtitle: 'Project Intern (Global HR system project)',
+        subtitle: 'Project Intern',
+        text: 'Global HR system project',
         location: 'Seoul, Korea'
     },
     impact: {
@@ -61,7 +62,7 @@ export const JOURNEY_TEXT = {
         color: '#000E2F'
     },
     iowa: {
-        date: 'Aug 2019- present',
+        date: 'Aug 2019 - present',
         title: 'University of Iowa',
         subtitle: 'Assistant Professor',
         text: 'Management and Entrepreneurship, Tippie College of Business',

@@ -17,15 +17,12 @@ export default function Teaching() {
                 <Typography variant="h5">Teaching Philosophy</Typography>
                 <Typography variant="body1">{PHILOSOPHY}</Typography>
                 {TEACHING_BELIEFS.map((teachingBelief: TeachingBelief, index: number) => (
-                    <div key={index}>
-                        <Typography variant="h6">{teachingBelief.title}</Typography>
-                        <Typography variant="body1">{teachingBelief.description}</Typography>
-                    </div>
+                    <BeliefItem belief={teachingBelief} />
                 ))}
                 <hr />
             </Container>
             <Container className={style.classes}>
-                <Typography variant="h5">Classes</Typography>
+                <Typography variant="h5">Courses Taught</Typography>
                 {COURSES.map((schoolCourses: SchoolCourses, index: number) => (
                     <div key={index}>
                         <Typography className={style.schoolName} variant="subtitle1">{schoolCourses.school}</Typography>
@@ -47,5 +44,23 @@ export default function Teaching() {
                 ))}
             </Container>
         </Box>
+    );
+}
+
+function BeliefItem({belief}: {belief: TeachingBelief}) {
+    const [open, setOpen] = useState(false);
+
+    return (
+        <div>
+            <div onClick={() => setOpen(!open)} className={style.expandButton}>
+                {open ? <ExpandLess /> : <ExpandMore />}
+                <Typography variant="subtitle1" fontWeight='bold'>{belief.title}</Typography>
+            </div>
+            <Collapse in={open}>
+                <div className={style.beliefContainer}>
+                    <Typography align="justify" variant="body1">{belief.description}</Typography>
+                </div>
+            </Collapse>
+        </div>
     );
 }
