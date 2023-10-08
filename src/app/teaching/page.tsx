@@ -17,7 +17,7 @@ export default function Teaching() {
                 <Typography variant="h5">Teaching Philosophy</Typography>
                 <Typography variant="body1">{PHILOSOPHY}</Typography>
                 {TEACHING_BELIEFS.map((teachingBelief: TeachingBelief, index: number) => (
-                    <BeliefItem belief={teachingBelief} />
+                    <BeliefItem key={index} belief={teachingBelief} />
                 ))}
                 <hr />
             </Container>
