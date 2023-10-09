@@ -19,10 +19,13 @@ export default function Teaching() {
                 {TEACHING_BELIEFS.map((teachingBelief: TeachingBelief, index: number) => (
                     <BeliefItem key={index} belief={teachingBelief} />
                 ))}
+                <br />
                 <hr />
+                <br />
             </Container>
             <Container className={style.classes}>
                 <Typography variant="h5">Courses Taught</Typography>
+                <br />
                 {COURSES.map((schoolCourses: SchoolCourses, index: number) => (
                     <div key={index}>
                         <Typography className={style.schoolName} variant="subtitle1">{schoolCourses.school}</Typography>
