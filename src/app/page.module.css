@@ -19,6 +19,8 @@
 }
 
 .imageWrapper {
+  max-width: 30vw;
+  max-height: 30vw;
   width: 500px;
   height: 500px;
   position: relative;
@@ -169,7 +171,7 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .content {
+  .main {
     padding: 4rem;
   }
 
