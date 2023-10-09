@@ -6,7 +6,7 @@ import { Dispatch, PropsWithChildren, SetStateAction, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ExpandLess, ExpandMore } from '@mui/icons-material';
+import { Menu } from '@mui/icons-material';
 
 const LINKS = [
     { text: 'Home', href: '/'},
@@ -54,7 +54,7 @@ function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispat
     return (
         <div className={style.navContainer}>
             <IconButton onClick={() => setMenuOpen(!menuOpen)}>
-                {menuOpen ? <ExpandLess /> : <ExpandMore />}
+                <Menu />
             </IconButton>
             <Drawer anchor="right" open={menuOpen} onClose={() => setMenuOpen(false)}>
                 <Box onClick={() => setMenuOpen(false)}>
