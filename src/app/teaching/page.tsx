@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Collapse, Container, Grid, Link, Typography } from '@mui/material';
+import { Box, Collapse, Container, Typography } from '@mui/material';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import { useState } from 'react';
 
