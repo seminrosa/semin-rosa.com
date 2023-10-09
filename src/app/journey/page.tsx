@@ -7,7 +7,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';import Image from "next/image";
+import TimelineDot from '@mui/lab/TimelineDot';
 
 import { BusinessOutlined, PublicOutlined, School, QueryStats, PersonSearch } from "@mui/icons-material";
 

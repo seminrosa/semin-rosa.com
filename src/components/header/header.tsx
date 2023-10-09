@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Drawer, IconButton, Link, LinkOwnProps, LinkProps, Typography, useMediaQuery } from '@mui/material'
+import { Box, Drawer, Hidden, IconButton, Link, LinkProps, Typography } from '@mui/material'
 import style from './header.module.css'
 import { Dispatch, PropsWithChildren, SetStateAction, useState } from 'react'
 import { styled } from '@mui/material/styles';
@@ -34,23 +34,23 @@ const HeaderLink = styled((props: HeaderLinkProps & LinkProps) => <Link {...prop
 export default function Header(props: PropsWithChildren) {
     const [menuOpen, setMenuOpen] = useState(false);
     const currentRoute = usePathname();
-    const isMobileMatch = useMediaQuery("(max-width:600px)");
 
     return (
         <header className={style.header}>
             <Typography variant='h5'>
                 <Link style={{color: 'inherit', textDecoration: 'none', fontWeight: 'bold'}} component={NextLink} href='/'>SEMIN PARK</Link>
             </Typography>
-            {showMenu(isMobileMatch, currentRoute, menuOpen, setMenuOpen)}
+            <Hidden only="xs">
+                <Links currentRoute={currentRoute} />
+            </Hidden>
+            <Hidden smUp>
+                <MobileMenu currentRoute={currentRoute} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            </Hidden>
         </header>
     )
 }
 
-function showMenu(isMobileMatch: boolean, currentRoute: string, menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>) {
-    return (isMobileMatch ? mobileMenu(currentRoute, menuOpen, setMenuOpen) : links(currentRoute))
-}
-
-function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>) {
+function MobileMenu({currentRoute, menuOpen, setMenuOpen}: {currentRoute: string, menuOpen: boolean, setMenuOpen: Dispatch<SetStateAction<boolean>>}) {
     return (
         <div className={style.navContainer}>
             <IconButton onClick={() => setMenuOpen(!menuOpen)}>
@@ -69,7 +69,7 @@ function mobileMenu(currentRoute: string, menuOpen: boolean, setMenuOpen: Dispat
     )
 }
 
-function links(currentRoute: string) {
+function Links({currentRoute}: {currentRoute: string}) {
     return (
         <div className={style.navContainer}>
             {LINKS.map((link) => (
