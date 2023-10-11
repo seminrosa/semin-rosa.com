@@ -4,8 +4,8 @@ import Header from '@/components/header/header';
 import '../../public/css/academicons.min.css';
 
 export const metadata: Metadata = {
-  title: 'Semin Park',
-  description: 'Semin Park - Professor of Management',
+  title: 'Semin Park, Ph.D.',
+  description: 'Dr. Semin Park is a researcher at the University of Iowa specializing in interpersonal dynamics in teams',
 };
 
 export default function RootLayout({
