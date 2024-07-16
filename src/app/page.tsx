@@ -32,13 +32,13 @@ export default function Home() {
                           <IconButton href="https://www.linkedin.com/in/semin-park-0021b245">
                             <LinkedIn/>
                           </IconButton>
-                          <IconButton href="https://scholar.google.com/citations?user=2Y9btZ8AAAAJ&hl=en">
+                          <IconButton href="https://scholar.google.com/citations?user=pPkYRlwAAAAJ&hl=en">
                             <Icon baseClassName="ai" className="ai-google-scholar-square" />
                           </IconButton>
                           <IconButton href="https://www.researchgate.net/profile/Semin-Park-4">
                             <Icon baseClassName="ai" className="ai-researchgate-square" />
                           </IconButton>
-                          <IconButton href={`mailto:semin-park@uiowa.edu`}>
+                          <IconButton href={`mailto:semin.park@psu.edu`}>
                             <Email />
                           </IconButton>
                         </Box>

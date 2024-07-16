@@ -21,6 +21,7 @@ export default function Journey() {
     return (
         <Box className={style.journeyContainer}>
             <Timeline position="alternate">
+                <PSU />
                 <Iowa />
                 <UConn />
                 <Calgary />
@@ -34,6 +35,42 @@ export default function Journey() {
             </Timeline>
         </Box>
     );
+}
+
+function PSU() {
+    return (
+        <TimelineItem>
+            <TimelineOppositeContent
+                sx={oppositeSx}
+                align="right"
+                variant="body2"
+            >
+                {JOURNEY_TEXT.psu.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+                <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.psu.color }} />
+                    <TimelineDot sx={{bgcolor: JOURNEY_TEXT.psu.color }}>
+                        <School />
+                    </TimelineDot>
+                <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.psu.color }} />
+            </TimelineSeparator>
+            <TimelineContent sx={contentSx}>
+                <Grid container alignItems='center' justifyContent='flex-end'>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.psu.location}</Typography>
+                    </Grid>
+                    <Grid xs={6}>
+                        <Typography variant='h6' component='span'>
+                            {JOURNEY_TEXT.psu.title}
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Typography fontStyle='italic'>
+                    {JOURNEY_TEXT.psu.subtitle}
+                </Typography>
+            </TimelineContent>
+        </TimelineItem>
+    )
 }
 
 function Iowa() {

@@ -5,7 +5,7 @@ import '../../public/css/academicons.min.css';
 
 export const metadata: Metadata = {
   title: 'Semin Park, Ph.D.',
-  description: 'Dr. Semin Park is a researcher at the University of Iowa specializing in interpersonal dynamics in teams',
+  description: 'Dr. Semin Park is a researcher at the Smeal College of Business, the Penn State University, specializing in interpersonal dynamics in teams',
 };
 
 export default function RootLayout({
