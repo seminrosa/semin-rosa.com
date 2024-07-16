@@ -55,19 +55,20 @@ function PSU() {
                 <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.psu.color }} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center' justifyContent='flex-end'>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.psu.location}</Typography>
-                    </Grid>
-                    <Grid xs={6}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.psu.title}
                         </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.psu.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
                     {JOURNEY_TEXT.psu.subtitle}
                 </Typography>
+                <Typography>{JOURNEY_TEXT.psu.text}</Typography>
             </TimelineContent>
         </TimelineItem>
     )
@@ -91,14 +92,14 @@ function Iowa() {
                 <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.iowa.color }} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center'>
-                    <Grid xs={6}>
+                <Grid container alignItems='center' justifyContent='flex-end'>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.iowa.location}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.iowa.title}
                         </Typography>
-                    </Grid>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.iowa.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
@@ -128,56 +129,19 @@ function UConn() {
                 <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.uconn.color }} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center' justifyContent='flex-end'>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.uconn.location}</Typography>
-                    </Grid>
-                    <Grid xs={6}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.uconn.title}
                         </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.uconn.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
                     {JOURNEY_TEXT.uconn.subtitle}
                 </Typography>
-            </TimelineContent>
-        </TimelineItem>
-    )
-}
-
-function Samsung() {
-    return (
-        <TimelineItem>
-            <TimelineOppositeContent
-                sx={oppositeSx}
-                align="right"
-                variant="body2"
-            >
-                {JOURNEY_TEXT.samsung.date}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: 'black'}} />
-                    <TimelineDot sx={{bgcolor: 'black' }}>
-                        <BusinessOutlined />
-                    </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: 'black'}} />
-            </TimelineSeparator>
-            <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center'>
-                    <Grid xs={6}>
-                        <Typography variant='h6' component='span'>
-                            {JOURNEY_TEXT.samsung.title}
-                        </Typography>
-                    </Grid>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.samsung.location}</Typography>
-                    </Grid>
-                </Grid>
-                <Typography fontStyle='italic'>
-                    {JOURNEY_TEXT.samsung.subtitle}
-                </Typography>
-                <Typography>{JOURNEY_TEXT.samsung.text}</Typography>
             </TimelineContent>
         </TimelineItem>
     )
@@ -201,14 +165,14 @@ function Calgary() {
                 <TimelineConnector sx={{ bgcolor: JOURNEY_TEXT.calgary.color }} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center'>
-                    <Grid xs={6}>
+                <Grid container alignItems='center' justifyContent='flex-end'>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.calgary.location}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.calgary.title}
                         </Typography>
-                    </Grid>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.calgary.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
@@ -238,14 +202,14 @@ function Impact() {
                 <TimelineConnector sx={{ bgcolor: 'black'}} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center' justifyContent='flex-end'>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.impact.location}</Typography>
-                    </Grid>
-                    <Grid xs={6}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.impact.title}
                         </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.impact.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
@@ -258,7 +222,7 @@ function Impact() {
     )
 }
 
-function SNUBAStart() {
+function Samsung() {
     return (
         <TimelineItem>
             <TimelineOppositeContent
@@ -266,55 +230,30 @@ function SNUBAStart() {
                 align="right"
                 variant="body2"
             >
-                {JOURNEY_TEXT.snuBaStart.date}
+                {JOURNEY_TEXT.samsung.date}
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
-                    <TimelineDot sx={{ bgcolor: JOURNEY_TEXT.snuBaStart.color }}>
-                        <School />
+                <TimelineConnector sx={{ bgcolor: 'black'}} />
+                    <TimelineDot sx={{bgcolor: 'black' }}>
+                        <BusinessOutlined />
                     </TimelineDot>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
+                <TimelineConnector sx={{ bgcolor: 'black'}} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
                 <Grid container alignItems='center' justifyContent='flex-end'>
                     <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.snuBaStart.location}</Typography>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.samsung.location}</Typography>
                     </Grid>
-                    <Grid xs={6}>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
-                            {JOURNEY_TEXT.snuBaStart.title}
+                            {JOURNEY_TEXT.samsung.title}
                         </Typography>
                     </Grid>
                 </Grid>
-            </TimelineContent>
-        </TimelineItem>
-    )
-}
-
-function SNUBAEnd() {
-    return (
-        <TimelineItem>
-            <TimelineOppositeContent
-                sx={oppositeSx}
-                align="right"
-                variant="body2"
-            >
-                {JOURNEY_TEXT.snuBaEnd.date}
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
-                    <TimelineDot sx={{ bgcolor: JOURNEY_TEXT.snuBaStart.color }}>
-                        <School />
-                    </TimelineDot>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
-            </TimelineSeparator>
-            <TimelineContent sx={contentSx}>
-                <Typography variant='h6' component='span'>
-                    {JOURNEY_TEXT.snuBaStart.title}
-                </Typography>
                 <Typography fontStyle='italic'>
-                    {JOURNEY_TEXT.snuBaStart.subtitle}
+                    {JOURNEY_TEXT.samsung.subtitle}
                 </Typography>
+                <Typography>{JOURNEY_TEXT.samsung.text}</Typography>
             </TimelineContent>
         </TimelineItem>
     )
@@ -338,14 +277,14 @@ function SNUMS() {
                 <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuMaEnd.color}} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center' justifyContent='flex-end'>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.snuMaEnd.location}</Typography>
-                    </Grid>
-                    <Grid xs={6}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.snuMaEnd.title}
                         </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.snuMaEnd.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
@@ -356,35 +295,29 @@ function SNUMS() {
     )
 }
 
-function EBSItem() {
+function SNUBAEnd() {
     return (
         <TimelineItem>
             <TimelineOppositeContent
                 sx={oppositeSx}
+                align="right"
                 variant="body2"
             >
-                {JOURNEY_TEXT.ebs.date}
+                {JOURNEY_TEXT.snuBaEnd.date}
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.ebs.color}} />
-                <TimelineDot sx={{bgcolor: 'white'}}>
-                    <PublicOutlined sx={{color: JOURNEY_TEXT.ebs.color}} />
-                </TimelineDot>
-                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.ebs.color}} />
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
+                    <TimelineDot sx={{ bgcolor: JOURNEY_TEXT.snuBaStart.color }}>
+                        <School />
+                    </TimelineDot>
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center'>
-                    <Grid xs={6}>
-                        <Typography variant='h6' component='span'>
-                            {JOURNEY_TEXT.ebs.title}
-                        </Typography>
-                    </Grid>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.ebs.location}</Typography>
-                    </Grid>
-                </Grid>
                 <Typography fontStyle='italic'>
-                    {JOURNEY_TEXT.ebs.subtitle}
+                    {JOURNEY_TEXT.snuBaStart.subtitle}
+                </Typography>
+                <Typography variant='h6' component='span'>
+                    {JOURNEY_TEXT.snuBaStart.title}
                 </Typography>
             </TimelineContent>
         </TimelineItem>
@@ -408,14 +341,14 @@ function LGItem() {
                 <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.lg.color}} />
             </TimelineSeparator>
             <TimelineContent sx={contentSx}>
-                <Grid container alignItems='center' justifyContent='flex-end'>
-                    <Grid>
-                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.lg.location}</Typography>
-                    </Grid>
-                    <Grid xs={6}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
                         <Typography variant='h6' component='span'>
                             {JOURNEY_TEXT.lg.title}
                         </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.lg.location}</Typography>
                     </Grid>
                 </Grid>
                 <Typography fontStyle='italic'>
@@ -424,6 +357,74 @@ function LGItem() {
                 <Typography>
                     {JOURNEY_TEXT.lg.text}
                 </Typography>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
+
+function EBSItem() {
+    return (
+        <TimelineItem>
+            <TimelineOppositeContent
+                sx={oppositeSx}
+                variant="body2"
+            >
+                {JOURNEY_TEXT.ebs.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.ebs.color}} />
+                <TimelineDot sx={{bgcolor: 'white'}}>
+                    <PublicOutlined sx={{color: JOURNEY_TEXT.ebs.color}} />
+                </TimelineDot>
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.ebs.color}} />
+            </TimelineSeparator>
+            <TimelineContent sx={contentSx}>
+                <Grid container alignItems='center' justifyContent='flex-end'>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.ebs.location}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Typography variant='h6' component='span'>
+                            {JOURNEY_TEXT.ebs.title}
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Typography fontStyle='italic'>
+                    {JOURNEY_TEXT.ebs.subtitle}
+                </Typography>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
+
+function SNUBAStart() {
+    return (
+        <TimelineItem>
+            <TimelineOppositeContent
+                sx={oppositeSx}
+                align="right"
+                variant="body2"
+            >
+                {JOURNEY_TEXT.snuBaStart.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
+                    <TimelineDot sx={{ bgcolor: JOURNEY_TEXT.snuBaStart.color }}>
+                        <School />
+                    </TimelineDot>
+                <TimelineConnector sx={{bgcolor: JOURNEY_TEXT.snuBaStart.color}} />
+            </TimelineSeparator>
+            <TimelineContent sx={contentSx}>
+                <Grid container alignItems='center'>
+                    <Grid item xs={6}>
+                        <Typography variant='h6' component='span'>
+                            {JOURNEY_TEXT.snuBaStart.title}
+                        </Typography>
+                    </Grid>
+                    <Grid>
+                        <Typography variant='body1' component='span'>{JOURNEY_TEXT.snuBaStart.location}</Typography>
+                    </Grid>
+                </Grid>
             </TimelineContent>
         </TimelineItem>
     )
