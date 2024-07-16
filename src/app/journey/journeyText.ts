@@ -62,11 +62,19 @@ export const JOURNEY_TEXT = {
         color: '#000E2F'
     },
     iowa: {
-        date: 'Aug 2019 - present',
+        date: 'Aug 2019 - June 2024',
         title: 'University of Iowa',
         subtitle: 'Assistant Professor',
         text: 'Management and Entrepreneurship, Tippie College of Business',
         location: 'Iowa City, IA',
         color: '#FFCD00'
+    },
+    psu: {
+        date: 'July 2024 - present',
+        title: 'Penn State University',
+        subtitle: 'Assistant Professor',
+        text: 'Management and Organization, Smeal College of Business',
+        location: 'State College, PA',
+        color: '#001E44'
     }
 }
